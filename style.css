@@ -1,8 +1,13 @@
 body{
-    background-color: #add8e6;
+    background-color:#062863;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url(images/1.png), url(images/2.png), url(images/3.png), url(images/last.png);
+    background-position: top -50px left -40px, top -50px right -40px, bottom -40px left -60px, bottom -40px right -60px;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-attachment: fixed;
     margin: 50px 500px 0px;
 }
 img{
@@ -12,7 +17,7 @@ img{
     margin-bottom: 50px;
     margin-left: 120px;
 }
-#container{
+.container{
     box-sizing: border-box;
     background-color: #fff;
     width: 70vh;
@@ -79,10 +84,38 @@ button{
     text-align: center;
     align-items: center;
     margin: 50px 50px 50px 85px;
+    color: #fff;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: #fff;
+}
+
+@media(max-width: 1080px){
+    body{
+        margin: 0px 140px 0px 0.5px;
+        font-size: 1rem;
+    }
+   #container{
+        width: 70vh;
+        /* height: 150vh; */
+        align-self: center;
+    }
+    input{
+        width: 50vh;
+    }
+    button{
+        width:50vh ;
+    }
+    #media{
+        width: 50vh;
+    }
+    .login{
+        display: inline-block;
+        margin-inline-start: 0.5rem;
+        font-size: 20px;
+    }
+    
 }
 
 
